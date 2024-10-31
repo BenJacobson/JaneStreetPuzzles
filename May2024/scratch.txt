@@ -1,0 +1,43 @@
+// Validator validators[N] = {
+//     [](ll x) {
+//       while (x > 1) {
+//         if (x % 7 == 0) {
+//           x /= 7;
+//         } else {
+//           break;
+//         }
+//       }
+//       return x == 1;
+//     },
+//     [](ll x) {
+//       ll a = 1, b = 1;
+//       while (b < x) {
+//         b = a + b;
+//         a = b - a;
+//       }
+//       return x == b;
+//     },
+//     [](ll x) { return x % 5 == 0; },
+//     [](ll x) {
+//       ll a = 1;
+//       while (a * a * a < x) {
+//         a++;
+//       }
+//       return a * a * a == x;
+//     },
+//     [](ll x) {
+//       std::vector<ll> d;
+//       while (x > 0) {
+//         d.push_back(x % 10);
+//         x /= 10;
+//       }
+//       ll l = 0, h = d.size() - 1;
+//       while (l < h) {
+//         if (d[l] != d[h]) {
+//           return false;
+//         }
+//         l++, h--;
+//       }
+//       return true;
+//     },
+// };
